@@ -1,11 +1,11 @@
 export const lazyLoadInitialData = {
   effect: 'blur',
-  threshold: 500,
+  threshold: 0,
   useIntersectionObserver: false,
   visibleByDefault: false,
   delayMethod: 'debounce',
   delayTime: 50,
-  direction: 'vertical-container',
+  direction: 'vertical-window',
 }
 
 export const selectFields = [
@@ -66,25 +66,6 @@ export const selectFields = [
       {
         label: 'Throttle',
         value: 'throttle',
-      }
-    ]
-  },
-  {
-    label: 'Direction',
-    name: 'direction',
-    description: 'This is not a property of the package itself. It is included here to demonstrate various image loading methods for the demo.',
-    options: [
-      {
-        label: 'Horizontal',
-        value: 'horizontal',
-      },
-      {
-        label: 'Vertical Container',
-        value: 'vertical-container',
-      },
-      {
-        label: 'Vertical Window',
-        value: 'vertical-window',
       }
     ]
   },
